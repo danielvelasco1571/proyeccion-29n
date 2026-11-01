@@ -27,3 +27,5 @@ La web quedará en `https://TU-USUARIO.github.io/proyeccion-29n/`.
 - Electomanía bloquea las descargas automáticas; sus sondeos llegan a través de Objetivo 176 y Wikipedia en pocas horas.
 - GitHub Pages puede tardar unos minutos en servir la versión nueva del JSON tras cada commit.
 - La hora programada está en UTC (8:13 y 20:13), que equivale a 9:13 y 21:13 en el horario de invierno de Madrid.
+
+Web pública: https://danielvelasco1571.github.io/proyeccion-29n/
