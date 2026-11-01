@@ -1,0 +1,28 @@
+name: Actualizar encuestas
+on:
+  schedule:
+    - cron: '13 8,20 * * *'   # 9:13 y 21:13 en Madrid (horario de invierno, UTC+1)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install beautifulsoup4
+      - run: python scripts/actualizar_encuestas.py
+      - name: Guardar cambios
+        run: |
+          if ! git diff --quiet encuestas_nuevas.json; then
+            git config user.name "actualizador-29N"
+            git config user.email "actions@users.noreply.github.com"
+            git add encuestas_nuevas.json
+            git commit -m "Encuestas nuevas $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "Sin encuestas nuevas"
+          fi
