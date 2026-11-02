@@ -1,1 +1,26 @@
-[]
+[
+ {
+  "fecha": "2026-11-01",
+  "casa": "SocioMétrica",
+  "medio": "El Español",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 4893,
+  "PP": 32.7,
+  "PSOE": 26.6,
+  "VOX": 19.1,
+  "FA": 5.2,
+  "COMPROMIS": 0.9,
+  "ERC": 2.5,
+  "JUNTS": 1.4,
+  "BILDU": 1.4,
+  "PNV": 0.8,
+  "BNG": 0.9,
+  "CC": 0.5,
+  "AA": 1.4,
+  "PODEMOS": 1.7,
+  "SALF": 2.5,
+  "url": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html",
+  "id": "2026-11-01-sociometrica"
+ }
+]
