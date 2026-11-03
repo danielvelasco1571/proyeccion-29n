@@ -1,8 +1,8 @@
 # Proyección 29N
 
-Modelo de simulación de las elecciones generales del 29 de noviembre de 2026: agregado de encuestas (filtro de Kalman con efecto casa), 25 escenarios, 10.000 simulaciones de Monte Carlo con D'Hondt por circunscripción, mapas provincial, municipal y censal, y vista por bloques ideológicos.
+Modelo de simulación de las elecciones generales del 29 de noviembre de 2026: agregado de encuestas (filtro de Kalman con efecto casa), 25 escenarios, 10.000 simulaciones de Monte Carlo con D'Hondt por circunscripción, mapas provincial, municipal y censal, vista por bloques ideológicos y visor calle a calle de las secciones censales.
 
-La página (`index.html`) es estática. Al abrirse lee `encuestas_nuevas.json` y recalcula todo el modelo en el navegador. Una acción de GitHub actualiza ese archivo dos veces al día (9:13 y 21:13, hora de Madrid) con las encuestas nuevas que publican Objetivo 176 (ciento76.es) y Wikipedia, incluidas las de ElectoPanel/Electomanía.
+La página (`index.html`) es estática. Al abrirse lee `encuestas_nuevas.json` y recalcula todo el modelo en el navegador. Una acción de GitHub actualiza ese archivo cada 30 minutos con las encuestas nuevas que publican Objetivo 176 (ciento76.es) y Wikipedia, incluidas las de ElectoPanel/Electomanía.
 
 ## Puesta en marcha (una sola vez)
 
@@ -26,6 +26,7 @@ La web quedará en `https://TU-USUARIO.github.io/proyeccion-29n/`.
 
 - Electomanía bloquea las descargas automáticas; sus sondeos llegan a través de Objetivo 176 y Wikipedia en pocas horas.
 - GitHub Pages puede tardar unos minutos en servir la versión nueva del JSON tras cada commit.
-- La hora programada está en UTC (8:13 y 20:13), que equivale a 9:13 y 21:13 en el horario de invierno de Madrid.
+- La actualización corre en los minutos 7 y 37 de cada hora; GitHub puede retrasar las ejecuciones programadas unos minutos.
+- `geo/secc_hd/` guarda la cartografía de secciones con más detalle para el visor calle a calle (callejero © colaboradores de OpenStreetMap).
 
 Web pública: https://danielvelasco1571.github.io/proyeccion-29n/

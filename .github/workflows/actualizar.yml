@@ -1,7 +1,7 @@
 name: Actualizar encuestas
 on:
   schedule:
-    - cron: '13 8,20 * * *'   # 9:13 y 21:13 en Madrid (horario de invierno, UTC+1)
+    - cron: '7,37 * * * *'   # cada 30 minutos (en el minuto 7 y 37 de cada hora)
   workflow_dispatch: {}
 permissions:
   contents: write
