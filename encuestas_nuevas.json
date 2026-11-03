@@ -105,5 +105,19 @@
   "SALF": 1.8,
   "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-suman-ya-un-techo-historico-de-127-millones-de-votos-y-lograrian-205-escanos.html",
   "id": "2026-10-28-hamalgama-metrica"
+ },
+ {
+  "fecha": "2026-10-25",
+  "casa": "More in Common",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 2210,
+  "PP": 28.3,
+  "PSOE": 27.6,
+  "VOX": 20.8,
+  "FA": 7.8,
+  "PODEMOS": 2.6,
+  "SALF": 2.4,
+  "id": "2026-10-25-more-in-common"
  }
 ]
