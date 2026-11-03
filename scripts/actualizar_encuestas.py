@@ -3,7 +3,8 @@ Fuentes: Objetivo 176 (ciento76.es) y Wikipedia; Electomanía se intenta primero
 Uso: python scripts/actualizar_encuestas.py  (sin dependencias salvo beautifulsoup4)"""
 import json, re, sys, unicodedata, urllib.request, datetime, os
 from bs4 import BeautifulSoup
-CORTE = '2026-10-30'          # la página ya incluye las encuestas hasta esta fecha
+CORTE = '2026-10-15'          # solo se buscan encuestas con fin de campo posterior a esta fecha
+BASE = os.path.join(os.path.dirname(__file__), 'base_incluidas.json')   # encuestas que ya trae index.html
 OUT = os.path.join(os.path.dirname(__file__), '..', 'encuestas_nuevas.json')
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'}
 CASAS = ['ElectoPanel','Sigma Dos','40dB','SocioMétrica','Target Point','NC Report','Hamalgama Métrica','DYM','InvyMark','Simple Lógica',
@@ -114,6 +115,10 @@ def fusiona(a, b):
 def main():
     previas = json.load(open(OUT, encoding='utf-8')) if os.path.exists(OUT) else []
     ids = {p['id'] for p in previas}
+    incluidas = [tuple(x) for x in json.load(open(BASE, encoding='utf-8'))] + [(p['casa'], p['fecha']) for p in previas]
+    def ya_esta(casa, fecha):
+        f = datetime.date.fromisoformat(fecha)
+        return any(c == casa and abs((datetime.date.fromisoformat(d) - f).days) <= 1 for c, d in incluidas)
     fuentes, errores = [], []
     try:
         get('https://electomania.es/category/encuestas/encuestas-generales/'); errores.append('electomania: accesible pero sin lector de tablas (se usan sus datos vía Objetivo 176 y Wikipedia)')
@@ -128,7 +133,7 @@ def main():
     for r in fusiona(wk, c76):
         if r['fecha'] <= CORTE: continue
         r['id'] = r['fecha'] + '-' + slug(r['casa'])
-        if r['id'] in ids: continue
+        if r['id'] in ids or ya_esta(r['casa'], r['fecha']): continue
         if r.get('PP') is None or r.get('PSOE') is None: continue
         r = {k: v for k, v in r.items() if v not in (None, '')}
         nuevas.append(r); ids.add(r['id'])
