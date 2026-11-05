@@ -107,6 +107,21 @@
   "id": "2026-10-28-hamalgama-metrica"
  },
  {
+  "fecha": "2026-10-27",
+  "casa": "Vox",
+  "medio": "The Objective",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1500,
+  "PP": 28.1,
+  "PSOE": 29.6,
+  "VOX": 20.2,
+  "FA": 6.2,
+  "PODEMOS": 1.9,
+  "SALF": 1.1,
+  "id": "2026-10-27-vox"
+ },
+ {
   "fecha": "2026-10-25",
   "casa": "More in Common",
   "fuente": "wikipedia",
