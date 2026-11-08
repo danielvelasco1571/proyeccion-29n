@@ -90,6 +90,28 @@
   "id": "2026-11-06-electopanel"
  },
  {
+  "fecha": "2026-11-06",
+  "casa": "Sigma Dos",
+  "medio": "El Mundo",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 4172,
+  "PP": 31.0,
+  "PSOE": 25.2,
+  "VOX": 19.4,
+  "FA": 6.9,
+  "COMPROMIS": 1.2,
+  "ERC": 2.9,
+  "JUNTS": 1.2,
+  "BILDU": 1.3,
+  "PNV": 0.9,
+  "BNG": 1.0,
+  "CC": 0.4,
+  "AA": 1.6,
+  "PODEMOS": 1.6,
+  "id": "2026-11-06-sigma-dos"
+ },
+ {
   "fecha": "2026-11-05",
   "casa": "Ateneo del Dato",
   "medio": "elDiario.es",
