@@ -1,5 +1,18 @@
 [
  {
+  "fecha": "2026-11-09",
+  "casa": "40dB",
+  "medio": "Prisa",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "PP": 31.9,
+  "PSOE": 29.9,
+  "VOX": 18.0,
+  "FA": 5.0,
+  "PODEMOS": 1.2,
+  "id": "2026-11-09-40db"
+ },
+ {
   "fecha": "2026-11-08",
   "casa": "SocioMétrica",
   "medio": "El Español",
