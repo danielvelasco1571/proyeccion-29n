@@ -30,3 +30,7 @@ La web quedará en `https://TU-USUARIO.github.io/proyeccion-29n/`.
 - `geo/secc_hd/` guarda la cartografía de secciones con más detalle para el visor calle a calle (callejero © colaboradores de OpenStreetMap).
 
 Web pública: https://danielvelasco1571.github.io/proyeccion-29n/
+
+## Noche electoral (29-N)
+
+La sección «Noche electoral» lee `escrutinio.json`. Lo actualiza `scripts/escrutinio.py` (GitHub Action `escrutinio.yml`, cada 5 minutos la noche del 29-N) cuando hay una fuente activa en `scripts/escrutinio_config.json`, o a mano con `python scripts/escrutinio.py --csv resultados.csv`. Cuando el estado pasa a `definitivo`, la página calcula la desviación de cada escenario y de cada encuesta.
