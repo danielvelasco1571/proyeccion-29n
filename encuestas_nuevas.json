@@ -36,6 +36,28 @@
   "id": "2026-11-08-sociometrica"
  },
  {
+  "fecha": "2026-11-08",
+  "casa": "SW Demoscopia",
+  "medio": "La Séptima",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 5500,
+  "PP": 28.5,
+  "PSOE": 31.1,
+  "VOX": 17.3,
+  "FA": 7.6,
+  "ERC": 2.5,
+  "JUNTS": 1.2,
+  "BILDU": 1.4,
+  "PNV": 0.8,
+  "BNG": 0.9,
+  "CC": 0.4,
+  "AA": 1.4,
+  "PODEMOS": 1.7,
+  "SALF": 2.1,
+  "id": "2026-11-08-sw-demoscopia"
+ },
+ {
   "fecha": "2026-11-06",
   "casa": "IMOP",
   "medio": "El Confidencial",
