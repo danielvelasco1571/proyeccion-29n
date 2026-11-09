@@ -139,6 +139,19 @@
   "id": "2026-11-05-ateneo-del-dato"
  },
  {
+  "fecha": "2026-11-05",
+  "casa": "GAD3",
+  "medio": "ABC",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1502,
+  "PP": 31.9,
+  "PSOE": 25.9,
+  "VOX": 18.6,
+  "FA": 7.5,
+  "id": "2026-11-05-gad3"
+ },
+ {
   "fecha": "2026-11-04",
   "casa": "SW Demoscopia",
   "medio": "La Séptima",
