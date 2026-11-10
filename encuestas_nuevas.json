@@ -147,6 +147,21 @@
   "id": "2026-11-06-sigma-dos"
  },
  {
+  "fecha": "2026-11-06",
+  "casa": "DYM",
+  "medio": "Henneo",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1025,
+  "PP": 33.1,
+  "PSOE": 27.3,
+  "VOX": 18.6,
+  "FA": 5.6,
+  "PODEMOS": 1.9,
+  "SALF": 0.4,
+  "id": "2026-11-06-dym"
+ },
+ {
   "fecha": "2026-11-05",
   "casa": "Ateneo del Dato",
   "medio": "elDiario.es",
