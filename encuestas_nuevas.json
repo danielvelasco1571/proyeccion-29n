@@ -1,5 +1,27 @@
 [
  {
+  "fecha": "2026-11-10",
+  "casa": "SW Demoscopia",
+  "medio": "La Séptima",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 6500,
+  "PP": 28.3,
+  "PSOE": 31.4,
+  "VOX": 17.5,
+  "FA": 7.4,
+  "ERC": 2.7,
+  "JUNTS": 1.2,
+  "BILDU": 1.4,
+  "PNV": 0.8,
+  "BNG": 1.0,
+  "CC": 0.4,
+  "AA": 1.4,
+  "PODEMOS": 1.7,
+  "SALF": 2.0,
+  "id": "2026-11-10-sw-demoscopia"
+ },
+ {
   "fecha": "2026-11-09",
   "casa": "40dB",
   "medio": "Prisa",
