@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-11",
+  "casa": "Sigma Dos",
+  "medio": "El Mundo",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 3870,
+  "PP": 30.8,
+  "PSOE": 25.3,
+  "VOX": 19.6,
+  "FA": 6.2,
+  "COMPROMIS": 1.1,
+  "AA": 2.0,
+  "PODEMOS": 1.4,
+  "id": "2026-11-11-sigma-dos"
+ },
+ {
   "fecha": "2026-11-10",
   "casa": "SW Demoscopia",
   "medio": "La Séptima",
