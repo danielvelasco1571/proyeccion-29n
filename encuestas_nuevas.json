@@ -416,6 +416,28 @@
   "id": "2026-10-30-target-point"
  },
  {
+  "fecha": "2026-10-30",
+  "casa": "CIS",
+  "fuente": "wikipedia",
+  "estado": "CIS",
+  "n": 45074,
+  "PP": 25.5,
+  "PSOE": 33.3,
+  "VOX": 18.4,
+  "FA": 5.3,
+  "COMPROMIS": 1.6,
+  "ERC": 3.1,
+  "JUNTS": 1.2,
+  "BILDU": 1.8,
+  "PNV": 0.7,
+  "BNG": 1.0,
+  "CC": 0.2,
+  "AA": 1.5,
+  "PODEMOS": 1.1,
+  "SALF": 1.4,
+  "id": "2026-10-30-cis"
+ },
+ {
   "fecha": "2026-10-29",
   "casa": "NC Report",
   "medio": "La Razón",
