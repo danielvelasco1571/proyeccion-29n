@@ -172,6 +172,22 @@
   "id": "2026-11-08-winston"
  },
  {
+  "fecha": "2026-11-08",
+  "casa": "ElectoPanel",
+  "medio": "Electomanía",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 2531,
+  "PP": 30.5,
+  "PSOE": 25.9,
+  "VOX": 19.0,
+  "FA": 6.2,
+  "COMPROMIS": 1.5,
+  "PODEMOS": 1.7,
+  "SALF": 2.0,
+  "id": "2026-11-08-electopanel"
+ },
+ {
   "fecha": "2026-11-06",
   "casa": "IMOP",
   "medio": "El Confidencial",
