@@ -472,6 +472,18 @@
   "id": "2026-11-02-sw-demoscopia"
  },
  {
+  "fecha": "2026-11-02",
+  "casa": "YouGov",
+  "medio": "Ara",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1221,
+  "PP": 29.6,
+  "PSOE": 25.9,
+  "VOX": 20.0,
+  "id": "2026-11-02-yougov"
+ },
+ {
   "fecha": "2026-11-01",
   "casa": "SocioMétrica",
   "medio": "El Español",
