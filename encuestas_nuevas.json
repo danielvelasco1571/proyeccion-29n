@@ -64,6 +64,28 @@
   "id": "2026-11-14-electopanel"
  },
  {
+  "fecha": "2026-11-14",
+  "casa": "SW Demoscopia",
+  "medio": "La Séptima",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 8500,
+  "PP": 28.6,
+  "PSOE": 31.7,
+  "VOX": 16.9,
+  "FA": 7.3,
+  "ERC": 2.8,
+  "JUNTS": 1.3,
+  "BILDU": 1.4,
+  "PNV": 0.8,
+  "BNG": 1.1,
+  "CC": 0.4,
+  "AA": 1.5,
+  "PODEMOS": 1.7,
+  "SALF": 2.0,
+  "id": "2026-11-14-sw-demoscopia"
+ },
+ {
   "fecha": "2026-11-13",
   "casa": "Sigma Dos",
   "medio": "El Mundo",
