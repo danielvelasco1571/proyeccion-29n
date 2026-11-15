@@ -1,5 +1,28 @@
 [
  {
+  "fecha": "2026-11-15",
+  "casa": "SocioMétrica",
+  "medio": "El Español",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 5923,
+  "PP": 32.1,
+  "PSOE": 27.8,
+  "VOX": 19.1,
+  "FA": 5.1,
+  "COMPROMIS": 0.9,
+  "ERC": 2.5,
+  "JUNTS": 1.3,
+  "BILDU": 1.5,
+  "PNV": 0.8,
+  "BNG": 1.0,
+  "CC": 0.4,
+  "AA": 1.6,
+  "PODEMOS": 1.2,
+  "SALF": 2.2,
+  "id": "2026-11-15-sociometrica"
+ },
+ {
   "fecha": "2026-11-14",
   "casa": "40dB",
   "medio": "Prisa",
