@@ -40,6 +40,19 @@
   "id": "2026-11-13-sigma-dos"
  },
  {
+  "fecha": "2026-11-13",
+  "casa": "Sondaxe",
+  "medio": "La Voz de Galicia",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1000,
+  "PP": 30.8,
+  "PSOE": 26.4,
+  "VOX": 18.2,
+  "FA": 6.4,
+  "id": "2026-11-13-sondaxe"
+ },
+ {
   "fecha": "2026-11-12",
   "casa": "40dB",
   "medio": "Prisa",
