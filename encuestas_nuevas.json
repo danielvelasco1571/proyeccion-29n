@@ -1,5 +1,28 @@
 [
  {
+  "fecha": "2026-11-13",
+  "casa": "Sigma Dos",
+  "medio": "El Mundo",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 5370,
+  "PP": 31.0,
+  "PSOE": 25.6,
+  "VOX": 19.7,
+  "FA": 6.1,
+  "COMPROMIS": 1.1,
+  "ERC": 2.7,
+  "JUNTS": 1.3,
+  "BILDU": 1.4,
+  "PNV": 0.8,
+  "BNG": 1.1,
+  "CC": 0.4,
+  "AA": 1.9,
+  "PODEMOS": 1.4,
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/13/6af73a35fdddffb36c8b45a0.html",
+  "id": "2026-11-13-sigma-dos"
+ },
+ {
   "fecha": "2026-11-12",
   "casa": "40dB",
   "medio": "Prisa",
