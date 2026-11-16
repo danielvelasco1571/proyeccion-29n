@@ -325,6 +325,18 @@
   "id": "2026-11-09-40db"
  },
  {
+  "fecha": "2026-11-09",
+  "casa": "InvyMark",
+  "url": "https://www.lasexta.com/elecciones/generales/barometro-lasexta-vox-mantienen-encima-51-votos-frente-bloque-izquierda-que-remonta_202611166afad474ea8d897997870c83.html",
+  "fuente": "ciento76",
+  "estado": "modelo",
+  "PP": 32.2,
+  "PSOE": 28.2,
+  "VOX": 19.1,
+  "FA": 6.4,
+  "id": "2026-11-09-invymark"
+ },
+ {
   "fecha": "2026-11-08",
   "casa": "SocioMétrica",
   "medio": "El Español",
