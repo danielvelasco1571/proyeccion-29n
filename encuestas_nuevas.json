@@ -63,6 +63,28 @@
   "id": "2026-11-16-sigma-dos"
  },
  {
+  "fecha": "2026-11-16",
+  "casa": "SW Demoscopia",
+  "medio": "La Séptima",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 9500,
+  "PP": 29.1,
+  "PSOE": 31.9,
+  "VOX": 16.5,
+  "FA": 7.3,
+  "ERC": 2.8,
+  "JUNTS": 1.3,
+  "BILDU": 1.3,
+  "PNV": 0.8,
+  "BNG": 1.0,
+  "CC": 0.4,
+  "AA": 1.5,
+  "PODEMOS": 1.7,
+  "SALF": 2.0,
+  "id": "2026-11-16-sw-demoscopia"
+ },
+ {
   "fecha": "2026-11-15",
   "casa": "SocioMétrica",
   "medio": "El Español",
