@@ -1,5 +1,22 @@
 [
  {
+  "fecha": "2026-11-16",
+  "casa": "40dB",
+  "medio": "Prisa",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 2000,
+  "PP": 31.8,
+  "PSOE": 30.6,
+  "VOX": 17.5,
+  "FA": 4.2,
+  "COMPROMIS": 1.2,
+  "PODEMOS": 1.1,
+  "SALF": 1.6,
+  "url": "https://elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/informe_tracking_dia04.pdf",
+  "id": "2026-11-16-40db"
+ },
+ {
   "fecha": "2026-11-15",
   "casa": "SocioMétrica",
   "medio": "El Español",
@@ -21,6 +38,28 @@
   "PODEMOS": 1.2,
   "SALF": 2.2,
   "id": "2026-11-15-sociometrica"
+ },
+ {
+  "fecha": "2026-11-15",
+  "casa": "Sondaxe",
+  "medio": "La Voz de Galicia",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1000,
+  "PP": 29.7,
+  "PSOE": 26.7,
+  "VOX": 18.0,
+  "FA": 6.0,
+  "COMPROMIS": 0.9,
+  "ERC": 2.7,
+  "JUNTS": 1.4,
+  "BILDU": 1.8,
+  "PNV": 1.0,
+  "BNG": 1.0,
+  "CC": 0.4,
+  "AA": 1.8,
+  "PODEMOS": 2.2,
+  "id": "2026-11-15-sondaxe"
  },
  {
   "fecha": "2026-11-14",
