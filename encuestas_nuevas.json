@@ -1,5 +1,22 @@
 [
  {
+  "fecha": "2026-11-18",
+  "casa": "40dB",
+  "medio": "Prisa",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 2000,
+  "PP": 32.4,
+  "PSOE": 30.4,
+  "VOX": 17.2,
+  "FA": 4.2,
+  "COMPROMIS": 1.2,
+  "PODEMOS": 1.2,
+  "SALF": 1.7,
+  "url": "https://elpais.com/infografias/encuestas40db/2026/11-tracking-electoral/informe_tracking_dia06.pdf",
+  "id": "2026-11-18-40db"
+ },
+ {
   "fecha": "2026-11-17",
   "casa": "Sondaxe",
   "medio": "La Voz de Galicia",
