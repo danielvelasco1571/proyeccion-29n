@@ -1,5 +1,15 @@
 [
  {
+  "fecha": "2026-11-19",
+  "casa": "Metroscopia",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "PP": 30.0,
+  "PSOE": 30.0,
+  "VOX": 19.0,
+  "id": "2026-11-19-metroscopia"
+ },
+ {
   "fecha": "2026-11-18",
   "casa": "40dB",
   "medio": "Prisa",
