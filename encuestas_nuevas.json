@@ -1,5 +1,21 @@
 [
  {
+  "fecha": "2026-11-20",
+  "casa": "40dB",
+  "medio": "Prisa",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 2000,
+  "PP": 31.9,
+  "PSOE": 31.2,
+  "VOX": 17.1,
+  "PODEMOS": 1.1,
+  "FA": 4.1,
+  "COMPROMIS": 1.2,
+  "SALF": 1.7,
+  "id": "2026-11-20-40db"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
