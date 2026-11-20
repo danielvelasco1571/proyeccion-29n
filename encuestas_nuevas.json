@@ -16,6 +16,30 @@
   "id": "2026-11-20-40db"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "ElectoPanel",
+  "medio": "Electomanía",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 6559,
+  "PP": 31.0,
+  "PSOE": 27.6,
+  "VOX": 18.2,
+  "FA": 6.0,
+  "COMPROMIS": 1.6,
+  "ERC": 2.3,
+  "JUNTS": 1.1,
+  "BILDU": 1.5,
+  "PNV": 0.8,
+  "BNG": 0.9,
+  "CC": 0.3,
+  "AA": 1.6,
+  "PODEMOS": 0.9,
+  "SALF": 2.3,
+  "url": "https://electomania.es/tracking-electopanel-20-nov-el-pp-sale-reforzado-del-cara-a-cara/",
+  "id": "2026-11-20-electopanel"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
@@ -24,6 +48,20 @@
   "PSOE": 30.0,
   "VOX": 19.0,
   "id": "2026-11-19-metroscopia"
+ },
+ {
+  "fecha": "2026-11-19",
+  "casa": "More in Common",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 2315,
+  "PP": 28.9,
+  "PSOE": 28.0,
+  "VOX": 19.8,
+  "FA": 7.1,
+  "PODEMOS": 1.7,
+  "SALF": 2.3,
+  "id": "2026-11-19-more-in-common"
  },
  {
   "fecha": "2026-11-18",
