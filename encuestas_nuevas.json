@@ -40,6 +40,20 @@
   "id": "2026-11-20-electopanel"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "Data10",
+  "medio": "Okdiario",
+  "fuente": "wikipedia+ciento76",
+  "estado": "modelo",
+  "n": 750,
+  "PP": 32.5,
+  "PSOE": 26.5,
+  "VOX": 18.8,
+  "FA": 6.8,
+  "url": "https://okdiario.com/espana/feijoo-llega-debate-46-puntos-ventaja-sobre-sanchez-historica-mayoria-absoluta-vox-21189868",
+  "id": "2026-11-20-data10"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
