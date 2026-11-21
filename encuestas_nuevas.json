@@ -77,6 +77,19 @@
   "id": "2026-11-20-data10"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "SW Demoscopia",
+  "medio": "La Séptima",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 11500,
+  "PP": 29.9,
+  "PSOE": 32.5,
+  "VOX": 15.9,
+  "FA": 6.8,
+  "id": "2026-11-20-sw-demoscopia"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
