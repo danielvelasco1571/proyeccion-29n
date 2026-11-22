@@ -90,6 +90,21 @@
   "id": "2026-11-20-sw-demoscopia"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "Ipsos",
+  "n": 1999,
+  "url": "https://www.lavanguardia.com/politica/20261122/11689982/derecha-suma-mayoria-absoluta-psoe-acerca-pp.html",
+  "fuente": "ciento76",
+  "estado": "modelo",
+  "PP": 30.3,
+  "PSOE": 29.8,
+  "VOX": 17.9,
+  "FA": 5.8,
+  "PODEMOS": 1.1,
+  "SALF": 1.9,
+  "id": "2026-11-20-ipsos"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
