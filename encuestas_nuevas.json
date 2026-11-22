@@ -128,6 +128,21 @@
   "id": "2026-11-20-sigma-dos"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "Hamalgama Métrica",
+  "n": 1000,
+  "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-se-disparan-a-210-escanos-y-frenan-en-seco-el-espiritu-de-remontada-del-psoe.html",
+  "fuente": "ciento76",
+  "estado": "modelo",
+  "PP": 31.8,
+  "PSOE": 25.4,
+  "VOX": 20.6,
+  "FA": 6.5,
+  "PODEMOS": 1.2,
+  "SALF": 1.7,
+  "id": "2026-11-20-hamalgama-metrica"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
