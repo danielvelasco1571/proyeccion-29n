@@ -275,6 +275,18 @@
   "id": "2026-11-20-nc-report"
  },
  {
+  "fecha": "2026-11-20",
+  "casa": "InvyMark",
+  "medio": "laSexta",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "PP": 31.5,
+  "PSOE": 28.7,
+  "VOX": 18.6,
+  "FA": 6.5,
+  "id": "2026-11-20-invymark"
+ },
+ {
   "fecha": "2026-11-19",
   "casa": "Metroscopia",
   "fuente": "wikipedia",
@@ -1409,6 +1421,18 @@
   "PSOE": 28.9,
   "VOX": 22.1,
   "id": "2026-10-31-sw-demoscopia"
+ },
+ {
+  "fecha": "2026-10-31",
+  "casa": "Cluster17",
+  "medio": "El Grand Continent",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "PP": 30.4,
+  "PSOE": 29.9,
+  "VOX": 18.4,
+  "FA": 5.8,
+  "id": "2026-10-31-cluster17"
  },
  {
   "fecha": "2026-10-30",
