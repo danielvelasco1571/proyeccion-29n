@@ -123,6 +123,17 @@
   "id": "2026-11-21-gesop"
  },
  {
+  "fecha": "2026-11-21",
+  "casa": "Convergent Opinion",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 6848,
+  "PP": 31.5,
+  "PSOE": 29.3,
+  "VOX": 17.4,
+  "id": "2026-11-21-convergent-opinion"
+ },
+ {
   "fecha": "2026-11-20",
   "casa": "40dB",
   "medio": "Prisa",
@@ -524,6 +535,28 @@
   "PODEMOS": 2.2,
   "SALF": 2.0,
   "id": "2026-11-17-public-first"
+ },
+ {
+  "fecha": "2026-11-17",
+  "casa": "CIS",
+  "fuente": "wikipedia",
+  "estado": "CIS",
+  "n": 8034,
+  "PP": 24.7,
+  "PSOE": 34.4,
+  "VOX": 15.6,
+  "FA": 6.4,
+  "COMPROMIS": 1.8,
+  "ERC": 2.7,
+  "JUNTS": 1.0,
+  "BILDU": 1.8,
+  "PNV": 0.7,
+  "BNG": 1.1,
+  "CC": 0.3,
+  "AA": 1.7,
+  "PODEMOS": 0.8,
+  "SALF": 1.8,
+  "id": "2026-11-17-cis"
  },
  {
   "fecha": "2026-11-16",
