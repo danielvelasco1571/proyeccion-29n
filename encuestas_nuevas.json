@@ -23,6 +23,28 @@
   "id": "2026-11-23-electopanel"
  },
  {
+  "fecha": "2026-11-23",
+  "casa": "Sigma Dos",
+  "medio": "El Mundo",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 5252,
+  "PP": 31.9,
+  "PSOE": 28.6,
+  "VOX": 17.8,
+  "FA": 5.5,
+  "COMPROMIS": 1.6,
+  "ERC": 2.7,
+  "JUNTS": 1.4,
+  "BILDU": 1.6,
+  "PNV": 0.9,
+  "BNG": 1.1,
+  "CC": 0.4,
+  "AA": 1.8,
+  "PODEMOS": 0.6,
+  "id": "2026-11-23-sigma-dos"
+ },
+ {
   "fecha": "2026-11-22",
   "casa": "40dB",
   "medio": "Prisa",
