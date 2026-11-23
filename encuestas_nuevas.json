@@ -1,5 +1,28 @@
 [
  {
+  "fecha": "2026-11-23",
+  "casa": "ElectoPanel",
+  "medio": "Electomanía",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 9456,
+  "PP": 31.5,
+  "PSOE": 28.9,
+  "VOX": 17.9,
+  "FA": 5.9,
+  "COMPROMIS": 1.8,
+  "ERC": 2.7,
+  "JUNTS": 1.2,
+  "BILDU": 1.5,
+  "PNV": 0.8,
+  "BNG": 0.9,
+  "CC": 0.3,
+  "AA": 1.7,
+  "PODEMOS": 0.9,
+  "SALF": 2.2,
+  "id": "2026-11-23-electopanel"
+ },
+ {
   "fecha": "2026-11-22",
   "casa": "40dB",
   "medio": "Prisa",
