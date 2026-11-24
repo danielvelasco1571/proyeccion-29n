@@ -196,6 +196,14 @@ footer{font-size:12.5px;color:var(--muted);padding-block:var(--s5)}
       </div>
     </div>
     <div style="height:var(--s4)"></div>
+    <div class="chart" id="nCmpBox">
+      <h3>Comparación con el escrutinio del 23J de 2023</h3>
+      <p class="note" style="margin-top:0">Escaños durante el recuento, según el porcentaje escrutado. Línea discontinua: el 23J, leído del marcador de la SER en la noche electoral. Línea continua: el 29-N.</p>
+      <svg id="nCmp" viewBox="0 0 640 280" role="img" aria-label="Escaños del escrutinio del 29N frente al 23J según el porcentaje escrutado"></svg>
+      <div class="tablewrap"><table id="nCmpTab"></table></div>
+      <p class="note" id="nCmpNote"></p>
+    </div>
+    <div style="height:var(--s4)"></div>
     <h3>Escenarios más próximos al escrutinio</h3>
     <div class="tablewrap"><table id="nRank"></table></div>
     <p class="note" id="nRankNote">Pulsa una fila para activar ese escenario en toda la página.</p>
@@ -1010,6 +1018,43 @@ function setupDL(){const scen=()=>{try{return cur().nombre}catch(e){return ''}};
       csv:tb?()=>tableRows(document.getElementById(tb)):(id==='polls'?()=>{const head=['fecha','casa','medio','n',...BDK,'estado'];return [head].concat(bdRows().map(p=>head.map(k=>p[k])))}:null),name:title})}
   for(const id of ['tblBloq','tblT']){const t=document.getElementById(id);if(!t)continue;const w=t.closest('.tablewrap')||t;const h=document.createElement('div');w.parentElement.insertBefore(h,w.nextSibling);
     dlBar(h,{png:()=>tablePng(t,{title:t.closest('section').querySelector('h2').textContent}),csv:()=>tableRows(t),name:()=>id==='tblT'?'matriz_transferencia_CIS':'bloques_'+scen()})}}
+// ---------- comparación con el escrutinio del 23J (marcador de la SER, noche electoral)
+const REF23J={fuente:'Marcador del escrutinio de Cadena SER, noche del 23J de 2023 (vídeo en directo). Último punto: resultado final.',pts:[{"e": 9.44, "PSOE": 129, "PP": 122, "VOX": 31, "SUMAR": 25, "OTROS": 27, "UPN": 0}, {"e": 13.51, "PSOE": 127, "PP": 122, "VOX": 31, "SUMAR": 27, "OTROS": 27, "UPN": 0}, {"e": 18.42, "PSOE": 128, "PP": 123, "VOX": 31, "SUMAR": 26, "OTROS": 27, "UPN": 0}, {"e": 27.2, "PSOE": 133, "PP": 128, "VOX": 32, "SUMAR": 29, "OTROS": 28, "UPN": 0}, {"e": 36.95, "PSOE": 131, "PP": 129, "VOX": 32, "SUMAR": 29, "OTROS": 29, "UPN": 0}, {"e": 40.85, "PSOE": 131, "PP": 129, "VOX": 32, "SUMAR": 30, "OTROS": 28, "UPN": 0}, {"e": 53.34, "PSOE": 130, "PP": 131, "VOX": 31, "SUMAR": 30, "OTROS": 28, "UPN": 0}, {"e": 59.5, "PSOE": 128, "PP": 131, "VOX": 33, "SUMAR": 30, "OTROS": 28, "UPN": 1}, {"e": 62.36, "PSOE": 128, "PP": 131, "VOX": 33, "SUMAR": 30, "OTROS": 28, "UPN": 1}, {"e": 81.99, "PSOE": 123, "PP": 134, "VOX": 33, "SUMAR": 31, "OTROS": 29, "UPN": 0}, {"e": 87.7, "PSOE": 122, "PP": 136, "VOX": 33, "SUMAR": 31, "OTROS": 28, "UPN": 1}, {"e": 93.19, "PSOE": 122, "PP": 136, "VOX": 33, "SUMAR": 31, "OTROS": 28, "UPN": 1}, {"e": 97.74, "PSOE": 122, "PP": 136, "VOX": 33, "SUMAR": 31, "OTROS": 28, "UPN": 1}, {"e": 100, "PSOE": 121, "PP": 137, "VOX": 33, "SUMAR": 31, "OTROS": 28, "UPN": 1}]};
+const CMP_K=[['PP','PP'],['PSOE','PSOE'],['VOX','VOX'],['SUMAR','Sumar (FA + Podemos + Compromís)']];
+function ref23At(e){const a=REF23J.pts;if(e<a[0].e)return null;if(e>=a[a.length-1].e)return a[a.length-1];let i=0;while(i<a.length-1&&a[i+1].e<=e)i++;const p=a[i],q=a[i+1],t=(e-p.e)/(q.e-p.e);const f=k=>{const x=p[k]+(q[k]-p[k])*t;return x};
+  const o={e};['PP','PSOE','VOX','SUMAR','OTROS','UPN'].forEach(k=>o[k]=f(k));return o}
+// el 29N agrupa UPN en el PP: se suma a la referencia cuando el marcador la desglosaba
+function refSeats(p){return {PP:p.PP+(p.UPN||0),PSOE:p.PSOE,VOX:p.VOX,SUMAR:p.SUMAR,OTROS:p.OTROS-(p.UPN||0)}}
+function seats29(v){const ix=k=>P.indexOf(k);const tot=d3.sum(v);const pp=v[ix('PP')],ps=v[ix('PSOE')],vx=v[ix('VOX')],su=v[ix('FA')]+v[ix('PODEMOS')]+v[ix('COMPROMIS')];return {PP:pp,PSOE:ps,VOX:vx,SUMAR:su,OTROS:tot-pp-ps-vx-su}}
+function drawCmp(D,pj,obsSeats){const svg=d3.select('#nCmp');svg.selectAll('*').remove();const W=640,H=280,m={l:40,r:170,t:12,b:32};
+  const x=d3.scaleLinear().domain([0,100]).range([m.l,W-m.r]),y=d3.scaleLinear().domain([0,150]).range([H-m.b,m.t]);
+  svg.append('g').attr('class','axis').attr('transform',`translate(0,${H-m.b})`).call(d3.axisBottom(x).ticks(10).tickFormat(d=>d+' %'));
+  svg.append('g').attr('class','axis').attr('transform',`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickSize(-(W-m.l-m.r))).call(g=>g.selectAll('line').attr('stroke-opacity',.2));
+  svg.append('text').attr('x',W-m.r).attr('y',H-4).attr('text-anchor','end').attr('font-size',10.5).attr('fill','var(--muted)').text('% escrutado');
+  const colK={PP:COL.PP,PSOE:COL.PSOE,VOX:COL.VOX,SUMAR:COL.FA};
+  const R23=REF23J.pts.map(p=>({e:p.e,...refSeats(p)}));
+  CMP_K.forEach(([k,lab],j)=>{svg.append('path').datum(R23).attr('d',d3.line().x(d=>x(d.e)).y(d=>y(d[k]))).attr('fill','none').attr('stroke',colK[k]).attr('stroke-width',1.8).attr('stroke-dasharray','5 4').attr('opacity',.85);
+    R23.forEach(p=>svg.append('circle').attr('cx',x(p.e)).attr('cy',y(p[k])).attr('r',2.2).attr('fill','var(--bg,#fff)').attr('stroke',colK[k]).append('title').text(`23J · ${lab}: ${p[k]} escaños con el ${fmtp(p.e)} % escrutado`))});
+  let ser=[];
+  if(D){const H0=(D.hist||[]).map(h=>({e:h.e,v:P.map((_,i)=>0),prov:h.prov}));
+    const pts=H0.map(h=>({e:h.e,...seats29(provSeatsObs({prov:h.prov}))}));
+    if(!pts.length||pts[pts.length-1].e<D.e-1e-6)pts.push({e:D.e,...seats29(obsSeats)});else pts[pts.length-1]={e:D.e,...seats29(obsSeats)};ser=pts;
+    CMP_K.forEach(([k,lab])=>{svg.append('path').datum(ser).attr('d',d3.line().x(d=>x(d.e)).y(d=>y(d[k]))).attr('fill','none').attr('stroke',colK[k]).attr('stroke-width',2.8);
+      ser.forEach(p=>svg.append('circle').attr('cx',x(p.e)).attr('cy',y(p[k])).attr('r',3).attr('fill',colK[k]).append('title').text(`29N · ${lab}: ${Math.round(p[k])} escaños con el ${fmtp(p.e)} % escrutado`))})}
+  CMP_K.forEach(([k,lab],j)=>{const yy=18+j*18;svg.append('line').attr('x1',W-m.r+8).attr('x2',W-m.r+30).attr('y1',yy-4).attr('y2',yy-4).attr('stroke',colK[k]).attr('stroke-width',2.4);svg.append('text').attr('x',W-m.r+36).attr('y',yy).attr('font-size',11).attr('fill',colK[k]).attr('font-weight',700).text(k==='SUMAR'?'Sumar':lab)});
+  const ly=18+4*18+8;svg.append('line').attr('x1',W-m.r+8).attr('x2',W-m.r+30).attr('y1',ly-4).attr('y2',ly-4).attr('stroke','var(--ink)').attr('stroke-width',2.6);svg.append('text').attr('x',W-m.r+36).attr('y',ly).attr('font-size',11).attr('fill','var(--ink)').text('29-N');
+  svg.append('line').attr('x1',W-m.r+8).attr('x2',W-m.r+30).attr('y1',ly+14).attr('y2',ly+14).attr('stroke','var(--ink)').attr('stroke-width',1.8).attr('stroke-dasharray','5 4');svg.append('text').attr('x',W-m.r+36).attr('y',ly+18).attr('font-size',11).attr('fill','var(--ink)').text('23J');
+  const tb=document.getElementById('nCmpTab'),note=document.getElementById('nCmpNote');
+  const fin=REF23J.pts[REF23J.pts.length-1];const fr=refSeats(fin);
+  const labs=[...CMP_K,['OTROS','Resto (ERC, Junts, Bildu, PNV, BNG, CC y otros)']];
+  if(!D){tb.innerHTML='<thead><tr><th style="text-align:left">23J, escaños en cada tramo</th>'+REF23J.pts.map(p=>`<th>${fmtp(p.e)} %</th>`).join('')+'</tr></thead><tbody>'+labs.map(([k,l])=>`<tr><td class="p" style="text-align:left">${l}</td>${REF23J.pts.map(p=>`<td>${refSeats(p)[k]}</td>`).join('')}</tr>`).join('')+'</tbody>';
+    note.textContent='Cuando empiece el escrutinio del 29-N, esta gráfica superpondrá su recuento sobre la curva del 23J. '+REF23J.fuente;return}
+  const cur=ser[ser.length-1];const r=ref23At(D.e);const rs=r?refSeats(r):null;const pj29=seats29(pj.seats);
+  let h='<thead><tr><th style="text-align:left"></th><th>29N escrutado ('+fmtp(D.e)+' %)</th><th>23J con el mismo % escrutado</th><th>Diferencia</th><th>23J resultado final</th><th>29N proyección al 100 %</th><th>Δ proyección 29N − 23J final</th></tr></thead><tbody>';
+  labs.forEach(([k,l])=>{const c=Math.round(cur[k]);const d=rs?c-Math.round(rs[k]):null;const dp=pj29[k]-fr[k];
+    h+=`<tr><td class="p" style="text-align:left">${k==='OTROS'?l:`<i class="sw" style="background:${colK[k]}"></i>${l}`}</td><td><b>${c}</b></td><td>${rs?Math.round(rs[k]):'–'}</td><td class="${d>0?'up':d<0?'down':''}">${d==null?'–':(d>0?'+':'')+d}</td><td>${fr[k]}</td><td><b>${pj29[k]}</b></td><td class="${dp>0?'up':dp<0?'down':''}">${dp>0?'+':''}${dp}</td></tr>`});
+  tb.innerHTML=h+'</tbody>';
+  note.textContent=(rs?'':'Todavía no hay referencia del 23J para un escrutinio tan bajo (el marcador de la SER empieza en el 9,4 %). ')+'La referencia entre puntos se interpola linealmente. En el 29-N el PP incluye a UPN (como en el resto de la página). Los primeros tramos del 23J suman menos de 350 escaños porque el marcador solo asignaba las circunscripciones con datos. Las pequeñas diferencias de criterio (Sumar, UPN) pueden mover ±1 escaño. '+REF23J.fuente}
 // ---------- noche electoral
 const NE={real:null,demo:null,timer:null,W:null,cacheSP:{},histSc:null};
 function dhq(v,seats){const ib=P.indexOf('BLANCO'),io=P.indexOf('OTROS');const tot=d3.sum(v);const el=v.map((x,i)=>i!==ib&&i!==io&&x>0&&x>=0.03*tot);const out=v.map(()=>0);
@@ -1057,7 +1102,7 @@ function curD(){return NE.demo||NE.real}
 function renderNoche(){const D=curD();const badge=document.getElementById('nBadge'),bt=document.getElementById('nBadgeTxt');
   document.getElementById('nDemoStop').hidden=!NE.demo;document.getElementById('nDemo').hidden=!!NE.demo;
   if(!D){bt.textContent=Date.now()<Date.parse('2026-11-29T19:00:00Z')?'El recuento empieza el 29-N a las 20:00 (21:00 en Canarias)':'Esperando los primeros datos del escrutinio';badge.className='pill';
-    document.getElementById('nKpis').innerHTML='';['nSeats','nEvo'].forEach(id=>d3.select('#'+id).selectAll('*').remove());document.getElementById('nRank').innerHTML='';document.getElementById('nParty').innerHTML='';document.getElementById('nFinal').hidden=true;
+    document.getElementById('nKpis').innerHTML='';['nSeats','nEvo'].forEach(id=>d3.select('#'+id).selectAll('*').remove());drawCmp(null);document.getElementById('nRank').innerHTML='';document.getElementById('nParty').innerHTML='';document.getElementById('nFinal').hidden=true;
     d3.select('#nSeats').append('text').attr('x',10).attr('y',30).attr('fill','var(--muted)').attr('font-size',13).text('Sin datos todavía. Prueba la simulación de recuento.');document.getElementById('nSrc').textContent='';return}
   const fin=D.estado==='definitivo';badge.className='pill '+(D.demo?'warn':fin?'ok':'live');
   bt.textContent=(D.demo?'SIMULACIÓN · ':'')+(fin?'Resultado definitivo':'Escrutado el '+fmtp(D.e)+' %');
@@ -1073,7 +1118,7 @@ function renderNoche(){const D=curD();const badge=document.getElementById('nBadg
     svg.append('line').attr('x1',x(175.5)).attr('x2',x(175.5)).attr('y1',16).attr('y2',200).attr('stroke','var(--ink)').attr('stroke-dasharray','3 3');svg.append('text').attr('x',x(175.5)+4).attr('y',204).attr('font-size',10.5).attr('fill','var(--ink)').text('176 · mayoría absoluta');
     document.getElementById('nSeatsNote').textContent=D.seats?'Escaños del escrutinio tal como los publica Interior.':'Escaños del escrutinio calculados con D’Hondt sobre el voto contado en cada provincia. La proyección completa el voto no escrutado con el escenario más próximo, corregido por la desviación observada.'}
   // evolution
-  drawEvo(D,R);
+  drawEvo(D,R);drawCmp(D,pj,obsSeats);
   // ranking table
   const sim=R.map(r=>Math.exp(-0.5*(r.d/Math.max(0.6,R[0].d))**2));const ssum=d3.sum(sim);
   let h='<thead><tr><th>#</th><th style="text-align:left">Escenario</th><th>Distancia (pts)</th><th>PP + VOX (escenario)</th><th>Escaños mal asignados</th><th>Similitud relativa</th></tr></thead><tbody>';

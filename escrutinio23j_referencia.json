@@ -1,0 +1,131 @@
+{
+ "fuente": "Marcador del escrutinio de Cadena SER, noche del 23J de 2023",
+ "puntos": [
+  {
+   "e": 9.44,
+   "PSOE": 129,
+   "PP": 122,
+   "VOX": 31,
+   "SUMAR": 25,
+   "OTROS": 27,
+   "UPN": 0
+  },
+  {
+   "e": 13.51,
+   "PSOE": 127,
+   "PP": 122,
+   "VOX": 31,
+   "SUMAR": 27,
+   "OTROS": 27,
+   "UPN": 0
+  },
+  {
+   "e": 18.42,
+   "PSOE": 128,
+   "PP": 123,
+   "VOX": 31,
+   "SUMAR": 26,
+   "OTROS": 27,
+   "UPN": 0
+  },
+  {
+   "e": 27.2,
+   "PSOE": 133,
+   "PP": 128,
+   "VOX": 32,
+   "SUMAR": 29,
+   "OTROS": 28,
+   "UPN": 0
+  },
+  {
+   "e": 36.95,
+   "PSOE": 131,
+   "PP": 129,
+   "VOX": 32,
+   "SUMAR": 29,
+   "OTROS": 29,
+   "UPN": 0
+  },
+  {
+   "e": 40.85,
+   "PSOE": 131,
+   "PP": 129,
+   "VOX": 32,
+   "SUMAR": 30,
+   "OTROS": 28,
+   "UPN": 0
+  },
+  {
+   "e": 53.34,
+   "PSOE": 130,
+   "PP": 131,
+   "VOX": 31,
+   "SUMAR": 30,
+   "OTROS": 28,
+   "UPN": 0
+  },
+  {
+   "e": 59.5,
+   "PSOE": 128,
+   "PP": 131,
+   "VOX": 33,
+   "SUMAR": 30,
+   "OTROS": 28,
+   "UPN": 1
+  },
+  {
+   "e": 62.36,
+   "PSOE": 128,
+   "PP": 131,
+   "VOX": 33,
+   "SUMAR": 30,
+   "OTROS": 28,
+   "UPN": 1
+  },
+  {
+   "e": 81.99,
+   "PSOE": 123,
+   "PP": 134,
+   "VOX": 33,
+   "SUMAR": 31,
+   "OTROS": 29,
+   "UPN": 0
+  },
+  {
+   "e": 87.7,
+   "PSOE": 122,
+   "PP": 136,
+   "VOX": 33,
+   "SUMAR": 31,
+   "OTROS": 28,
+   "UPN": 1
+  },
+  {
+   "e": 93.19,
+   "PSOE": 122,
+   "PP": 136,
+   "VOX": 33,
+   "SUMAR": 31,
+   "OTROS": 28,
+   "UPN": 1
+  },
+  {
+   "e": 97.74,
+   "PSOE": 122,
+   "PP": 136,
+   "VOX": 33,
+   "SUMAR": 31,
+   "OTROS": 28,
+   "UPN": 1
+  },
+  {
+   "e": 100,
+   "PSOE": 121,
+   "PP": 137,
+   "VOX": 33,
+   "SUMAR": 31,
+   "OTROS": 28,
+   "UPN": 1
+  }
+ ]
+}
