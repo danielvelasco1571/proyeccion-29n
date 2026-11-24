@@ -1013,6 +1013,19 @@
   "id": "2026-11-13-invymark"
  },
  {
+  "fecha": "2026-11-13",
+  "casa": "Cluster17",
+  "medio": "El Grand Continent",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 1525,
+  "PP": 30.4,
+  "PSOE": 29.9,
+  "VOX": 18.4,
+  "FA": 5.8,
+  "id": "2026-11-13-cluster17"
+ },
+ {
   "fecha": "2026-11-12",
   "casa": "40dB",
   "medio": "Prisa",
