@@ -90,6 +90,23 @@
   "id": "2026-11-23-atlasintel"
  },
  {
+  "fecha": "2026-11-23",
+  "casa": "GESOP",
+  "medio": "The Adelaide Review",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 902,
+  "PP": 31.9,
+  "PSOE": 28.2,
+  "VOX": 18.3,
+  "FA": 7.6,
+  "ERC": 2.6,
+  "JUNTS": 1.4,
+  "PODEMOS": 0.5,
+  "SALF": 1.4,
+  "id": "2026-11-23-gesop"
+ },
+ {
   "fecha": "2026-11-22",
   "casa": "40dB",
   "medio": "Prisa",
