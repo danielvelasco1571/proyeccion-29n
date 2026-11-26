@@ -1,5 +1,22 @@
 [
  {
+  "fecha": "2026-11-25",
+  "casa": "GESOP",
+  "medio": "The Adelaide Review",
+  "fuente": "wikipedia",
+  "estado": "modelo",
+  "n": 902,
+  "PP": 32.8,
+  "PSOE": 28.1,
+  "VOX": 16.5,
+  "FA": 8.2,
+  "ERC": 2.5,
+  "JUNTS": 1.0,
+  "PODEMOS": 0.7,
+  "SALF": 1.5,
+  "id": "2026-11-25-gesop"
+ },
+ {
   "fecha": "2026-11-23",
   "casa": "ElectoPanel",
   "medio": "Electomanía",
