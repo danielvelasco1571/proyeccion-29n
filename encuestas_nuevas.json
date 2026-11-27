@@ -1,5 +1,17 @@
 [
  {
+  "fecha": "2026-11-27",
+  "casa": "PSOE",
+  "medio": "The Objective",
+  "fuente": "wikipedia",
+  "estado": "partidista",
+  "PP": 31.9,
+  "PSOE": 33.2,
+  "VOX": 14.3,
+  "FA": 6.9,
+  "id": "2026-11-27-psoe"
+ },
+ {
   "fecha": "2026-11-25",
   "casa": "GESOP",
   "medio": "The Adelaide Review",
